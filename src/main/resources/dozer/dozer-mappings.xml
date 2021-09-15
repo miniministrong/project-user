@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping
+          http://dozermapper.github.io/schema/bean-mapping.xsd">
+        <mapping>
+            <class-a>com.ebiz.user.model.User</class-a>
+            <class-b>com.ebiz.user.dto.UserDTO</class-b>
+            <field>
+                <a>password</a>
+                <b set-method="setPassword">password</b>
+            </field>
+        </mapping>
+</mappings>

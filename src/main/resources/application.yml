@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+mybatis:
+  mapper-locations: classpath:mapping/**/*.xml
+  type-aliases-package: com.ebiz.user.model
+  configuration:
+    use-generated-keys: true
+    map-underscore-to-camel-case: true
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/user?useSSL=false
+    username: root
+    password: duhonglei
+
+# pageHelper配置
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+
+dozer:
+  mapping-files: classpath:dozer/dozer-mappings.xml
